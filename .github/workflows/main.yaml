@@ -33,7 +33,7 @@ jobs:
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:hashiguchi-goq/manage-issue repo:GoQSystemInc/GoQSystemOrder is:issue created:2023-10-01..2023-10-31 -reason:"not planned"'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue created:2023-10-01..2023-10-31'
 
       - name: Create issue
         uses: peter-evans/create-issue-from-file@v4
