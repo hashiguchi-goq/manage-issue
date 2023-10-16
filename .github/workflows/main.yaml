@@ -7,6 +7,9 @@ permissions:
   issues: write
   pull-requests: read
 
+env:
+  API_TOKEN: ${{ secrets.API_TOKEN }}
+
 jobs:
   build:
     name: issue metrics
