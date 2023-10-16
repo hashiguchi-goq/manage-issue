@@ -1,6 +1,7 @@
 name: Monthly issue metrics (Multi Repo)
 on:
-  workflow_dispatch:
+  issues:
+    types: [opened, edited, closed, reopened]
 
 permissions:
   issues: write
