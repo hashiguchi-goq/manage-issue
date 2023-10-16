@@ -8,7 +8,7 @@ permissions:
   pull-requests: read
 
 env:
-  API_TOKEN: ${{ secrets.API_TOKEN }}
+  API_TOKEN: ${{ secrets.NEW_API_TOKEN }}
 
 jobs:
   build:
