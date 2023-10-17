@@ -33,12 +33,12 @@ jobs:
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-06-01..2023-06-30 -reason:"not planned"'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-07-01..2023-07-31 -reason:"not planned"'
 
       - name: Create issue
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 2023年6月の不具合件数
+          title: 2023年7月の不具合件数
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
