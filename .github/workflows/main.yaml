@@ -1,7 +1,7 @@
-name: Monthly issue metrics (Multi Repo)
+name: Issue Metrics
+
 on:
-  issues:
-    types: [opened, edited, closed, reopened]
+  push
 
 permissions:
   issues: write
@@ -38,7 +38,7 @@ jobs:
       - name: Create issue
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: Monthly issue metrics report (dev)
+          title: 2022-09
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
