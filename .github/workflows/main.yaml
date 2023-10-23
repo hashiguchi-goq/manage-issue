@@ -33,7 +33,7 @@ jobs:
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue assignee:"marumoto-goq" created:2022-09-01..2022-09-30 -reason:"not planned"'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue assignee:"kawaji-goq" created:2022-09-01..2022-09-30 -reason:"not planned"'
 
       - name: Create issue
         uses: peter-evans/create-issue-from-file@v4
