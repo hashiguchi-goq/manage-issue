@@ -33,12 +33,12 @@ jobs:
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2022-09-01..2022-09-30 -reason:"not planned"'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2022-09-01..2022-09-30 -assignee:"fujita-goq"'
 
       - name: Create issue
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 2022-9 Assignees:kawaji-goq
+          title: 2022-9:藤田
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
