@@ -16,29 +16,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Get dates for last month
-        shell: bash
-        run: |
-          # Calculate the first day of the previous month
-          first_day=$(date -d "last month" +%Y-%m-01)
-
-          # Calculate the last day of the previous month
-          last_day=$(date -d "$first_day +1 month -1 day" +%Y-%m-%d)
-
-          #Set an environment variable with the date range
-          echo "$first_day..$last_day"
-          echo "last_month=$first_day..$last_day" >> "$GITHUB_ENV"
-
-      - name: Get issue metrics
+      - name: Get issue metrics 202209
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
           SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2022-09-01..2022-09-30 assignee:fujita-goq'
 
-      - name: Create issue
+      - name: Create issue 202209
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 2022-9:藤田
+          title: 2022年9月の不具合ケース（藤田）
+          token: ${{ secrets.GITHUB_TOKEN }}
+          content-filepath: ./issue_metrics.md
+          assignees: <YOUR_GITHUB_HANDLE_HERE>
+
+      - name: Get issue metrics 202210
+        uses: github/issue-metrics@v2
+        env:
+          GH_TOKEN: ${{ env.API_TOKEN }}
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2022-10-01..2022-10-31 assignee:fujita-goq'
+
+      - name: Create issue 202210
+        uses: peter-evans/create-issue-from-file@v4
+        with:
+          title: 2022年10月の不具合ケース（藤田）
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
