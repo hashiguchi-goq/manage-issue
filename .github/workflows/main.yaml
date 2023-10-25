@@ -19,12 +19,12 @@ jobs:
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2022-09-01..2022-09-30 assignee:hashiguchi-goq'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2022-09-01..2022-09-30 assignee:nagaoka-goq'
 
       - name: Create issue 202209
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 2022年9月の不具合ケース（橋口）
+          title: 2022年9月の不具合ケース（永岡）
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
@@ -33,12 +33,12 @@ jobs:
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2022-10-01..2022-10-31 assignee:hashiguchi-goq'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2022-10-01..2022-10-31 assignee:nagaoka-goq'
 
       - name: Create issue 202210
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 2022年10月の不具合ケース（橋口）
+          title: 2022年10月の不具合ケース（永岡）
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
@@ -47,12 +47,12 @@ jobs:
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2022-11-01..2022-11-30 assignee:hashiguchi-goq'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2022-11-01..2022-11-30 assignee:nagaoka-goq'
 
       - name: Create issue 202211
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 2022年11月の不具合ケース（橋口）
+          title: 2022年11月の不具合ケース（永岡）
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
@@ -61,12 +61,12 @@ jobs:
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2022-12-01..2022-12-31 assignee:hashiguchi-goq'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2022-12-01..2022-12-31 assignee:nagaoka-goq'
 
       - name: Create issue 202212
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 2022年12月の不具合ケース（橋口）
+          title: 2022年12月の不具合ケース（永岡）
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
@@ -75,12 +75,12 @@ jobs:
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-01-01..2023-01-31 assignee:hashiguchi-goq'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-01-01..2023-01-31 assignee:nagaoka-goq'
 
       - name: Create issue 202301
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 2023年1月の不具合ケース（橋口）
+          title: 2023年1月の不具合ケース（永岡）
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
@@ -89,12 +89,12 @@ jobs:
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-02-01..2023-02-28 assignee:hashiguchi-goq'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-02-01..2023-02-28 assignee:nagaoka-goq'
 
       - name: Create issue 202302
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 2023年2月の不具合ケース（橋口）
+          title: 2023年2月の不具合ケース（永岡）
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
@@ -103,12 +103,12 @@ jobs:
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-03-01..2023-03-31 assignee:hashiguchi-goq'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-03-01..2023-03-31 assignee:nagaoka-goq'
 
       - name: Create issue 202303
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 2023年3月の不具合ケース（橋口）
+          title: 2023年3月の不具合ケース（永岡）
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
@@ -117,12 +117,12 @@ jobs:
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-04-01..2023-04-30 assignee:hashiguchi-goq'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-04-01..2023-04-30 assignee:nagaoka-goq'
 
       - name: Create issue 202304
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 2023年4月の不具合ケース（橋口）
+          title: 2023年4月の不具合ケース（永岡）
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
@@ -131,12 +131,12 @@ jobs:
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-05-01..2023-05-31 assignee:hashiguchi-goq'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-05-01..2023-05-31 assignee:nagaoka-goq'
 
       - name: Create issue 202305
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 2023年5月の不具合ケース（橋口）
+          title: 2023年5月の不具合ケース（永岡）
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
@@ -145,12 +145,12 @@ jobs:
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-06-01..2023-06-30 assignee:hashiguchi-goq'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-06-01..2023-06-30 assignee:nagaoka-goq'
 
       - name: Create issue 202306
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 2023年6月の不具合ケース（橋口）
+          title: 2023年6月の不具合ケース（永岡）
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
@@ -159,12 +159,12 @@ jobs:
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-07-01..2023-07-31 assignee:hashiguchi-goq'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-07-01..2023-07-31 assignee:nagaoka-goq'
 
       - name: Create issue 202307
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 2023年7月の不具合ケース（橋口）
+          title: 2023年7月の不具合ケース（永岡）
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
@@ -173,12 +173,12 @@ jobs:
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-08-01..2023-08-31 assignee:hashiguchi-goq'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-08-01..2023-08-31 assignee:nagaoka-goq'
 
       - name: Create issue 202308
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 2023年8月の不具合ケース（橋口）
+          title: 2023年8月の不具合ケース（永岡）
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
@@ -187,12 +187,12 @@ jobs:
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-09-01..2023-09-30 assignee:hashiguchi-goq'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-09-01..2023-09-30 assignee:nagaoka-goq'
 
       - name: Create issue 202309
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 2023年9月の不具合ケース（橋口）
+          title: 2023年9月の不具合ケース（永岡）
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
