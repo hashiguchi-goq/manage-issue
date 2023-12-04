@@ -15,30 +15,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Get issue metrics 202310 (All)
+      - name: Get issue metrics 202309 (All)
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"ケース" created:2023-10-01..2023-10-31'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"ケース" created:2023-09-01..2023-09-30'
 
-      - name: Create issue 202310 (All)
+      - name: Create issue 202309 (All)
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 202310 (All)
+          title: 202309 (All)
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
 
-      - name: Get issue metrics 202310 (Error)
+      - name: Get issue metrics 202309 (Error)
         uses: github/issue-metrics@v2
         env:
           GH_TOKEN: ${{ env.API_TOKEN }}
-          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-10-01..2023-10-31'
+          SEARCH_QUERY: 'repo:GoQSystemInc/GoQSystemOrder is:issue label:"不具合" created:2023-09-01..2023-09-30'
 
-      - name: Create issue 202310 (Error)
+      - name: Create issue 202309 (Error)
         uses: peter-evans/create-issue-from-file@v4
         with:
-          title: 202310 (Error)
+          title: 202309 (Error)
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./issue_metrics.md
           assignees: <YOUR_GITHUB_HANDLE_HERE>
